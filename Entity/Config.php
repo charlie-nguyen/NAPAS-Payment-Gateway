@@ -1,11 +1,11 @@
 <?php
-namespace Plugin\Napas\Entity;
+namespace Plugin\OSNapas\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Table(name="plg_napas_config")
- * @ORM\Entity(repositoryClass="Plugin\Napas\Repository\ConfigRepository")
+ * @ORM\Entity(repositoryClass="Plugin\OSNapas\Repository\ConfigRepository")
  */
 class Config
 {

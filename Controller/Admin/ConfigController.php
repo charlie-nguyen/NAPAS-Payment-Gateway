@@ -1,13 +1,13 @@
 <?php
-namespace Plugin\Napas\Controller\Admin;
+namespace Plugin\OSNapas\Controller\Admin;
 
-use Plugin\Napas\Service\Payment\NapasGateway;
+use Plugin\OSNapas\Service\Payment\NapasGateway;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Eccube\Controller\AbstractController;
-use Plugin\Napas\Repository\ConfigRepository;
-use Plugin\Napas\Form\Type\Admin\ConfigType;
+use Plugin\OSNapas\Repository\ConfigRepository;
+use Plugin\OSNapas\Form\Type\Admin\ConfigType;
 
 class ConfigController extends AbstractController
 {
@@ -37,8 +37,8 @@ class ConfigController extends AbstractController
     }
 
     /**
-     * @Route("/%eccube_admin_route%/napas/config", name="napas_admin_config")
-     * @Template("@Napas/admin/config.twig")
+     * @Route("/%eccube_admin_route%/napas/config", name="os_napas_admin_config")
+     * @Template("@OSNapas/admin/config.twig")
      * @param Request $request
      * @return array|\Symfony\Component\HttpFoundation\JsonResponse
      */
@@ -72,7 +72,7 @@ class ConfigController extends AbstractController
 
     /**
      * @Route("/%eccube_admin_route%/napas/config/check_return", name="napas_admin_config_check_return")
-     * @Template("@Napas/admin/config.twig")
+     * @Template("@OSNapas/admin/config.twig")
      * @param Request $request
      * @return array|\Symfony\Component\HttpFoundation\RedirectResponse
      */
@@ -83,13 +83,13 @@ class ConfigController extends AbstractController
 
     /**
      * @Route("/%eccube_admin_route%/napas/config/check_cancel", name="napas_admin_config_check_cancel")
-     * @Template("@Napas/admin/config.twig")
+     * @Template("@OSNapas/admin/config.twig")
      * @param Request $request
      * @return array|\Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function checkCancel(Request $request)
     {
         $this->addError('napas.response.msg.cancel', 'admin');
-        return $this->redirectToRoute('napas_admin_config');
+        return $this->redirectToRoute('os_napas_admin_config');
     }
 }

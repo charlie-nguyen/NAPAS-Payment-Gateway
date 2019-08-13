@@ -1,9 +1,9 @@
 <?php
-namespace Plugin\Napas\Repository;
+namespace Plugin\OSNapas\Repository;
 
 use Symfony\Bridge\Doctrine\RegistryInterface;
 use Eccube\Repository\AbstractRepository;
-use Plugin\Napas\Entity\Config;
+use Plugin\OSNapas\Entity\Config;
 
 class ConfigRepository extends AbstractRepository
 {

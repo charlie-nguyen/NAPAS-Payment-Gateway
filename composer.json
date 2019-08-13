@@ -4,6 +4,6 @@
     "description": "Napas Payment Gateway",
     "version": "1.0.0",
     "extra": {
-        "code": "Napas"
+        "code": "OSNapas"
     }
 }

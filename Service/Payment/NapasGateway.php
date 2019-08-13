@@ -1,13 +1,13 @@
 <?php
 
-namespace Plugin\Napas\Service\Payment;
+namespace Plugin\OSNapas\Service\Payment;
 
 use Eccube\Common\EccubeConfig;
 use Eccube\Entity\Order;
 use Eccube\Repository\BaseInfoRepository;
 use Eccube\Repository\OrderRepository;
-use Plugin\Napas\Entity\Config;
-use Plugin\Napas\Repository\PaidLogsRepository;
+use Plugin\OSNapas\Entity\Config;
+use Plugin\OSNapas\Repository\PaidLogsRepository;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,7 +18,7 @@ use Eccube\Repository\Master\OrderStatusRepository;
 use Eccube\Service\PurchaseFlow\PurchaseFlow;
 use Eccube\Entity\Master\OrderStatus;
 use Eccube\Service\PurchaseFlow\PurchaseContext;
-use Plugin\Napas\Repository\ConfigRepository;
+use Plugin\OSNapas\Repository\ConfigRepository;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 class NapasGateway implements PaymentMethodInterface
@@ -234,7 +234,7 @@ class NapasGateway implements PaymentMethodInterface
     }
 
     /**
-     * Check connect to Napas input card page
+     * Check connect to OSNapas input card page
      *
      * @param Config $Config
      * @return string
@@ -284,7 +284,7 @@ class NapasGateway implements PaymentMethodInterface
         $obj = new \stdClass();
         $obj->vpcURL = $vpcURL;
 
-        // Save logs before send to Napas system
+        // Save logs before send to OSNapas system
         if (!$this->isCheck) {
             $sendUrl = clone $obj;
             $query_str = parse_url($sendUrl->vpcURL, PHP_URL_QUERY);

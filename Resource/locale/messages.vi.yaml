@@ -3,7 +3,7 @@ napas.config.callback_url.label: "Địa chỉ xử lý phản hồi"
 napas.config.merchant_id.label: "Tài khoản thanh toán"
 napas.config.merchant_access_code.label: "Mã truy cập"
 napas.config.secret.label: "Mã bí mật"
-napas.admin.config.title: "Cổng thanh toán Napas"
+napas.admin.config.title: "Cổng thanh toán OSNapas"
 napas.admin.config.sub_title: "Tùy chỉnh"
 napas.admin.order.title: "Thông tin thanh toán"
 napas.admin.config.title_card: Cài đặt thông tin tài khoản

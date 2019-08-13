@@ -1,7 +1,7 @@
 <?php
-namespace Plugin\Napas\Repository;
+namespace Plugin\OSNapas\Repository;
 
-use Plugin\Napas\Entity\PaidLogs;
+use Plugin\OSNapas\Entity\PaidLogs;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 use Eccube\Repository\AbstractRepository;
 

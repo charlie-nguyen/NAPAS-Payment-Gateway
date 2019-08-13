@@ -1,7 +1,7 @@
 <?php
-namespace Plugin\Napas\Controller;
+namespace Plugin\OSNapas\Controller;
 
-use Plugin\Napas\Repository\PaidLogsRepository;
+use Plugin\OSNapas\Repository\PaidLogsRepository;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;

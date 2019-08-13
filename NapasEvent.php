@@ -1,12 +1,12 @@
 <?php
-namespace Plugin\Napas;
+namespace Plugin\OSNapas;
 
 use Eccube\Common\EccubeConfig;
 use Eccube\Entity\Order;
 use Eccube\Event\TemplateEvent;
 use Eccube\Repository\PaymentRepository;
-use Plugin\Napas\Entity\PaidLogs;
-use Plugin\Napas\Repository\PaidLogsRepository;
+use Plugin\OSNapas\Entity\PaidLogs;
+use Plugin\OSNapas\Repository\PaidLogsRepository;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class NapasEvent implements EventSubscriberInterface
@@ -85,7 +85,7 @@ class NapasEvent implements EventSubscriberInterface
             $parameter['paidLog'] = $paidLog;
             $event->setParameters($parameter);
 
-            $twig = '@Napas/admin/paid_log.twig';
+            $twig = '@OSNapas/admin/paid_log.twig';
             $event->addSnippet($twig);
         }
     }

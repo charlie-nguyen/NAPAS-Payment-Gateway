@@ -1,12 +1,12 @@
 <?php
-namespace Plugin\Napas\Form\Type\Admin;
+namespace Plugin\OSNapas\Form\Type\Admin;
 
 use Eccube\Common\EccubeConfig;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Plugin\Napas\Entity\Config;
+use Plugin\OSNapas\Entity\Config;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Url;
