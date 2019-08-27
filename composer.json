@@ -1,7 +1,7 @@
 {
     "name": "Napas Payment Gateway",
     "type": "eccube-plugin",
-    "description": "Napas Payment Gateway",
+    "description": "OnShop - Cổng thanh toán Napas",
     "version": "1.0.0",
     "extra": {
         "code": "OSNapas"
